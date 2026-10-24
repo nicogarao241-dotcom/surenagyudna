@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cousins Stroll Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🌿 Cousins Stroll</h1>
+    <p>Every stroll becomes a beautiful memory.</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#add">Add Stroll</a>
+    <a href="#records">Stroll Records</a>
+</nav>
+
+<main>
+    <section id="home" class="welcome">
+        <h2>Our  Adventures 📸</h2>
+        <p>Remember where we went, when we went,
+           and which cousins joined us!</p>
+    </section>
+
+    <section class="stats">
+        <div class="stat-card">
+            <h3 id="total">0</h3>
+            <p>Total Strolls</p>
+        </div>
+        <div class="stat-card">
+            <h3 id="places">0</h3>
+            <p>Places Visited</p>
+        </div>
+    </section>
+
+    <section id="add" class="form-section">
+        <h2>➕ Add a New Stroll</h2>
+
+        <form id="strollForm">
+            <label for="date">Date of Stroll</label>
+            <input type="date" id="date" required>
+
+            <label for="place">Where did you go?</label>
+            <input type="text" id="place"
+                   placeholder="e.g. Bukid, beach, falls" required>
+
+            <label for="activity">Activity</label>
+            <select id="activity" required>
+                <option value="">Choose an activity</option>
+                <option>Bukid Adventure</option>
+                <option>Swimming</option>
+                <option>Beach Trip</option>
+                <option>Waterfalls</option>
+                <option>Road Trip</option>
+                <option>Family Bonding</option>
+                <option>Other</option>
+            </select>
+
+            <label for="cousins">Cousins Who Joined</label>
+            <input type="text" id="cousins"
+                   placeholder="e.g. Juan, Pedro, Ana" required>
+
+            <label for="notes">Memory / Description</label>
+            <textarea id="notes"
+                      placeholder="What happened during the stroll?"></textarea>
+
+            <button type="submit">Save Stroll</button>
+        </form>
+    </section>
+
+    <section id="records" class="records-section">
+        <h2>📖 Our Stroll Records</h2>
+        <div id="strollList" class="stroll-list">
+            <p class="empty">No strolls recorded yet. Add your first memory!</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>Made with ❤️ for our Cousins' Memories</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

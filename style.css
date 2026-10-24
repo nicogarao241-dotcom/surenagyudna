@@ -1,0 +1,211 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7f0;
+    color: #303c31;
+    line-height: 1.6;
+}
+
+header {
+    background: #285b40;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+nav {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px #00000010;
+}
+
+nav a {
+    text-decoration: none;
+    color: #285b40;
+    font-weight: bold;
+    margin: 0 12px;
+}
+
+nav a:hover {
+    color: #d28b45;
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 25px auto;
+}
+
+.welcome {
+    background: #dcebd7;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.welcome h2 {
+    color: #285b40;
+    margin-bottom: 8px;
+}
+
+.stats {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #0000000a;
+}
+
+.stat-card h3 {
+    font-size: 30px;
+    color: #285b40;
+}
+
+.form-section,
+.records-section {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px #0000000a;
+}
+
+h2 {
+    margin-bottom: 18px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin: 12px 0 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd7ca;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+button {
+    background: #285b40;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 18px;
+}
+
+button:hover {
+    background: #397a53;
+}
+
+.stroll-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 15px;
+}
+
+.stroll-card {
+    background: #f5f8f2;
+    border-left: 5px solid #57865b;
+    border-radius: 10px;
+    padding: 18px;
+    overflow-wrap: anywhere;
+}
+
+.stroll-card h3 {
+    color: #285b40;
+    margin-bottom: 8px;
+}
+
+.stroll-card p {
+    margin: 6px 0;
+}
+
+.delete-btn {
+    background: #b94747;
+    width: 100%;
+}
+
+.delete-btn:hover {
+    background: #963737;
+}
+
+.empty {
+    color: #777;
+    padding: 15px 0;
+}
+
+footer {
+    background: #285b40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    .stats {
+        gap: 8px;
+    }
+
+    .stat-card {
+        padding: 14px 5px;
+    }
+
+    .form-section,
+    .records-section {
+        padding: 18px;
+    }
+}
